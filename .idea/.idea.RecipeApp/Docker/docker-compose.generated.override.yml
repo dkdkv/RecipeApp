@@ -1,0 +1,19 @@
+# This is a generated file. Not intended for manual editing.
+services:
+  recipeapp:
+    build:
+      context: "C:\\Users\\weabo\\Projects\\C#\\RecipeApp"
+      dockerfile: "RecipeApp/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net7.0/RecipeApp.dll"
+    environment: {}
+    image: "recipeapp:dev"
+    ports: []
+    volumes:
+    - "C:\\Users\\weabo\\AppData\\Roaming\\ASP.NET\\Https:/root/.aspnet/https"
+    - "C:\\Users\\weabo\\AppData\\Roaming\\Microsoft\\UserSecrets:/root/.microsoft/usersecrets"
+    - "C:\\Users\\weabo\\Projects\\C#\\RecipeApp\\RecipeApp:/app:rw"
+    working_dir: "/app"
